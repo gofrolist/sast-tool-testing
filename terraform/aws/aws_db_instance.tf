@@ -47,3 +47,8 @@ resource "aws_db_instance" "rdsOldCA" {
   backup_retention_period = 0
   ca_cert_identifier   =  "rds-ca-2015"
 }
+
+resource "aws_s3_bucket" "test123" {
+  bucket = "test123"
+  acl    = "private"
+}
